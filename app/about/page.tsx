@@ -38,7 +38,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/v1.jpg?height=400&width=600"
                 alt="Volunteers working together"
                 fill
                 className="object-cover"
@@ -237,7 +237,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Volunteer impact" fill className="object-cover" />
+              <Image src="/v2.jpg?height=400&width=600" alt="Volunteer impact" fill className="object-cover" />
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Global Reach</h3>

@@ -58,7 +58,7 @@ export default function AdminDashboard() {
       name: "Sarah Johnson",
       email: "sarah.j@example.com",
       type: "volunteer",
-      joinDate: "2023-03-15",
+      requestDate: "2023-03-15",
       status: "active",
       avatar: "/placeholder.svg?height=40&width=40",
     },
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
       name: "Community Health Initiative",
       email: "contact@chi.org",
       type: "organization",
-      joinDate: "2023-03-14",
+      requestDate: "2023-03-14",
       status: "active",
       avatar: "/placeholder.svg?height=40&width=40",
     },
@@ -76,7 +76,7 @@ export default function AdminDashboard() {
       name: "Michael Chen",
       email: "michael.c@example.com",
       type: "volunteer",
-      joinDate: "2023-03-12",
+      requestDate: "2023-03-12",
       status: "pending",
       avatar: "/placeholder.svg?height=40&width=40",
     },
@@ -85,7 +85,7 @@ export default function AdminDashboard() {
       name: "Education For All",
       email: "info@educationforall.org",
       type: "organization",
-      joinDate: "2023-03-10",
+      requestDate: "2023-03-10",
       status: "active",
       avatar: "/placeholder.svg?height=40&width=40",
     },
@@ -364,7 +364,7 @@ export default function AdminDashboard() {
                                   {user.type === "volunteer" ? "Volunteer" : "Organization"}
                                 </Badge>
                                 <span className="text-xs text-muted-foreground ml-2">
-                                  Joined: {new Date(user.joinDate).toLocaleDateString()}
+                                  Joined: {new Date(user.requestDate).toLocaleDateString()}
                                 </span>
                               </div>
                             </div>

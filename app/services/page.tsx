@@ -2,16 +2,17 @@ import { ArrowRight, MessageSquare, Users, Zap, Award, CheckCircle, BarChart } f
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-
 export default function ServicesPage() {
   return (
+    
     <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl mx-auto opacity-90">
-            Discover how our AI-powered platform connects skilled volunteers with organizations in need.
+            Discover how our AI-powered platform connects skilled volunteers
+            with organizations in need.
           </p>
         </div>
       </section>
@@ -22,8 +23,9 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">How Our Chatbot Works</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Our intelligent matching system uses AI to connect the right volunteers with the right opportunities,
-              making the process seamless for both parties.
+              Our intelligent matching system uses AI to connect the right
+              volunteers with the right opportunities, making the process
+              seamless for both parties.
             </p>
           </div>
 
@@ -32,10 +34,12 @@ export default function ServicesPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <MessageSquare className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Natural Conversation</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Natural Conversation
+              </h3>
               <p className="text-muted-foreground">
-                Our chatbot uses natural language processing to understand your needs and preferences through simple
-                conversation.
+                Our chatbot uses natural language processing to understand your
+                needs and preferences through simple conversation.
               </p>
             </div>
 
@@ -45,8 +49,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Smart Matching</h3>
               <p className="text-muted-foreground">
-                Advanced algorithms analyze skills, experience, and project requirements to suggest the most compatible
-                matches.
+                Advanced algorithms analyze skills, experience, and project
+                requirements to suggest the most compatible matches.
               </p>
             </div>
 
@@ -54,25 +58,33 @@ export default function ServicesPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Profile Recommendations</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Profile Recommendations
+              </h3>
               <p className="text-muted-foreground">
-                Browse detailed volunteer profiles with ratings, reviews, and past project history to make informed
-                decisions.
+                Browse detailed volunteer profiles with ratings, reviews, and
+                past project history to make informed decisions.
               </p>
             </div>
           </div>
 
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             <div className="aspect-video">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Chatbot interface demonstration"
-                fill
-                className="object-cover"
+              <video
+                src="/videov.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-full"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <Button size="lg" className="gap-2">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm3.5 10.7l-5 3A1 1 0 0 1 7 13V7a1 1 0 0 1 1.5-.7l5 3a1 1 0 0 1 0 1.4z" />
                   </svg>
                   Watch Demo
@@ -87,17 +99,24 @@ export default function ServicesPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Volunteer Expertise Areas</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Volunteer Expertise Areas
+            </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Our platform connects organizations with skilled volunteers across a wide range of disciplines and
-              specialties.
+              Our platform connects organizations with skilled volunteers across
+              a wide range of disciplines and specialties.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -108,13 +127,19 @@ export default function ServicesPage() {
               </div>
               <h3 className="font-semibold mb-2">Web Development</h3>
               <p className="text-sm text-muted-foreground">
-                Frontend, backend, full-stack development, and CMS implementation.
+                Frontend, backend, full-stack development, and CMS
+                implementation.
               </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -131,7 +156,12 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -141,12 +171,19 @@ export default function ServicesPage() {
                 </svg>
               </div>
               <h3 className="font-semibold mb-2">Content Creation</h3>
-              <p className="text-sm text-muted-foreground">Copywriting, editing, translation, and content strategy.</p>
+              <p className="text-sm text-muted-foreground">
+                Copywriting, editing, translation, and content strategy.
+              </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -163,7 +200,12 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -174,14 +216,25 @@ export default function ServicesPage() {
               </div>
               <h3 className="font-semibold mb-2">Project Management</h3>
               <p className="text-sm text-muted-foreground">
-                Planning, coordination, and execution of projects and initiatives.
+                Planning, coordination, and execution of projects and
+                initiatives.
               </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
               <h3 className="font-semibold mb-2">IT Support</h3>
@@ -192,7 +245,12 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -209,7 +267,12 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -220,7 +283,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="font-semibold mb-2">Education</h3>
               <p className="text-sm text-muted-foreground">
-                Curriculum development, tutoring, workshop facilitation, and training.
+                Curriculum development, tutoring, workshop facilitation, and
+                training.
               </p>
             </div>
           </div>
@@ -240,27 +304,39 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Success Stories</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Real stories from volunteers and organizations who have connected through our platform.
+              Real stories from volunteers and organizations who have connected
+              through our platform.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=192&width=384" alt="Success story" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=192&width=384"
+                  alt="Success story"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Website Redesign for Environmental Nonprofit</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Website Redesign for Environmental Nonprofit
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  A team of volunteer web developers created a modern, accessible website for an environmental
-                  nonprofit, increasing their online donations by 45%.
+                  A team of volunteer web developers created a modern,
+                  accessible website for an environmental nonprofit, increasing
+                  their online donations by 45%.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Award className="h-5 w-5 text-primary mr-1" />
                     <span className="text-sm">Web Development</span>
                   </div>
-                  <Link href="/success-stories/1" className="text-primary text-sm hover:underline">
+                  <Link
+                    href="/success-stories/1"
+                    className="text-primary text-sm hover:underline"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -269,20 +345,31 @@ export default function ServicesPage() {
 
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=192&width=384" alt="Success story" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=192&width=384"
+                  alt="Success story"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Marketing Campaign for Community Health Initiative</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Marketing Campaign for Community Health Initiative
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Volunteer marketers developed a comprehensive campaign that helped a community health initiative reach
-                  200% more people in underserved areas.
+                  Volunteer marketers developed a comprehensive campaign that
+                  helped a community health initiative reach 200% more people in
+                  underserved areas.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Award className="h-5 w-5 text-primary mr-1" />
                     <span className="text-sm">Marketing</span>
                   </div>
-                  <Link href="/success-stories/2" className="text-primary text-sm hover:underline">
+                  <Link
+                    href="/success-stories/2"
+                    className="text-primary text-sm hover:underline"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -291,20 +378,31 @@ export default function ServicesPage() {
 
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=192&width=384" alt="Success story" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=192&width=384"
+                  alt="Success story"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Financial Strategy for Education Startup</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Financial Strategy for Education Startup
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  A volunteer financial advisor helped an education startup secure funding and develop a sustainable
-                  financial model for long-term growth.
+                  A volunteer financial advisor helped an education startup
+                  secure funding and develop a sustainable financial model for
+                  long-term growth.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Award className="h-5 w-5 text-primary mr-1" />
                     <span className="text-sm">Financial Services</span>
                   </div>
-                  <Link href="/success-stories/3" className="text-primary text-sm hover:underline">
+                  <Link
+                    href="/success-stories/3"
+                    className="text-primary text-sm hover:underline"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -328,20 +426,28 @@ export default function ServicesPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Become a Volunteer</h2>
               <p className="text-muted-foreground mb-6">
-                Join our community of skilled volunteers and start making an impact today. The process is simple:
+                Join our community of skilled volunteers and start making an
+                impact today. The process is simple:
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-2 shrink-0" />
-                  <span>Create your profile highlighting your skills and experience</span>
+                  <span>
+                    Create your profile highlighting your skills and experience
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-2 shrink-0" />
-                  <span>Set your availability and preferences for volunteer work</span>
+                  <span>
+                    Set your availability and preferences for volunteer work
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-2 shrink-0" />
-                  <span>Get matched with organizations that need your specific skills</span>
+                  <span>
+                    Get matched with organizations that need your specific
+                    skills
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-2 shrink-0" />
@@ -356,7 +462,12 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Volunteer signup" fill className="object-cover" />
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Volunteer signup"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -366,24 +477,31 @@ export default function ServicesPage() {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Technology Behind Our Platform</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Technology Behind Our Platform
+            </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Our platform leverages cutting-edge technology to create seamless connections between volunteers and
-              organizations.
+              Our platform leverages cutting-edge technology to create seamless
+              connections between volunteers and organizations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl font-semibold mb-4">AI-Powered Matching</h3>
+              <h3 className="text-2xl font-semibold mb-4">
+                AI-Powered Matching
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Our proprietary matching algorithm uses machine learning to understand the nuances of skills,
-                experience, and project requirements, creating more meaningful connections.
+                Our proprietary matching algorithm uses machine learning to
+                understand the nuances of skills, experience, and project
+                requirements, creating more meaningful connections.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <BarChart className="h-5 w-5 text-primary mr-2 shrink-0" />
-                  <span>Natural language processing for understanding user needs</span>
+                  <span>
+                    Natural language processing for understanding user needs
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <BarChart className="h-5 w-5 text-primary mr-2 shrink-0" />
@@ -391,24 +509,38 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex items-start">
                   <BarChart className="h-5 w-5 text-primary mr-2 shrink-0" />
-                  <span>Continuous learning from successful collaborations</span>
+                  <span>
+                    Continuous learning from successful collaborations
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
-              <Image src="/placeholder.svg?height=300&width=500" alt="AI technology" fill className="object-cover" />
+              <Image
+                src="/placeholder.svg?height=300&width=500"
+                alt="AI technology"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=300&width=500" alt="Secure platform" fill className="object-cover" />
+              <Image
+                src="/placeholder.svg?height=300&width=500"
+                alt="Secure platform"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Secure and Scalable Platform</h3>
+              <h3 className="text-2xl font-semibold mb-4">
+                Secure and Scalable Platform
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Built with security and scalability in mind, our platform ensures a safe and reliable experience for all
-                users.
+                Built with security and scalability in mind, our platform
+                ensures a safe and reliable experience for all users.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
@@ -417,7 +549,9 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex items-start">
                   <BarChart className="h-5 w-5 text-primary mr-2 shrink-0" />
-                  <span>Cloud-based infrastructure for reliability and performance</span>
+                  <span>
+                    Cloud-based infrastructure for reliability and performance
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <BarChart className="h-5 w-5 text-primary mr-2 shrink-0" />
@@ -434,20 +568,24 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8 opacity-90">
-            Join our platform today and be part of a community that's making a difference through skilled volunteering.
+            Join our platform today and be part of a community that's making a
+            difference through skilled volunteering.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="group">
               Volunteer Sign Up
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground/20 hover:bg-primary-foreground/10"
+            >
               Organization Sign Up
             </Button>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
-
