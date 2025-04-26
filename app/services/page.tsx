@@ -328,7 +328,7 @@ export default function ServicesPage() {
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
+                  src="/v5.jpg?height=192&width=384"
                   alt="Success story"
                   fill
                   className="object-cover"
@@ -361,7 +361,7 @@ export default function ServicesPage() {
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
+                  src="/v8.jpg?height=192&width=384"
                   alt="Success story"
                   fill
                   className="object-cover"
@@ -394,7 +394,7 @@ export default function ServicesPage() {
             <div className="bg-card rounded-lg shadow-md overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
+                  src="/v7.jpg?height=190&width=384"
                   alt="Success story"
                   fill
                   className="object-cover"
@@ -478,7 +478,7 @@ export default function ServicesPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/v9?height=400&width=600"
                 alt="Volunteer signup"
                 fill
                 className="object-cover"
@@ -532,7 +532,7 @@ export default function ServicesPage() {
             </div>
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <Image
-                src="/placeholder.svg?height=300&width=500"
+                src="/v6.jpg?height=300&width=500"
                 alt="AI technology"
                 fill
                 className="object-cover"
@@ -543,7 +543,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=300&width=500"
+                src="/v10.avif?height=300&width=500"
                 alt="Secure platform"
                 fill
                 className="object-cover"

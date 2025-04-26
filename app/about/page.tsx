@@ -293,7 +293,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Sector impact" fill className="object-cover" />
+              <Image src="/v4.jpg?height=400&width=600" alt="Sector impact" fill className="object-cover" />
             </div>
           </div>
         </div>
