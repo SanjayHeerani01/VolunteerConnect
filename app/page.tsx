@@ -69,7 +69,7 @@ export default function Home() {
         {/* Background image with parallax effect */}
         <div className="absolute inset-0 w-full h-full animate-zoom-out">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/v3.jpg?height=1080&width=1920"
             alt="Volunteers in action"
             fill
             className="object-cover"
