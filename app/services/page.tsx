@@ -1,8 +1,16 @@
+"use client";
+
 import { ArrowRight, MessageSquare, Users, Zap, Award, CheckCircle, BarChart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react";
+
+
+
 export default function ServicesPage() {
+  const [playVideo, setPlayVideo] = useState(false);
+
   return (
     
     <div className="pt-16">
@@ -32,7 +40,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-card p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <MessageSquare className="h-6 w-6 text-primary" />
+                <MessageSquare className="h-6 w-6 text-primary"/>
               </div>
               <h3 className="text-xl font-semibold mb-3">
                 Natural Conversation
@@ -45,7 +53,7 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <Zap className="h-6 w-6 text-primary" />
+                <Zap className="h-6 w-6 text-primary"/>
               </div>
               <h3 className="text-xl font-semibold mb-3">Smart Matching</h3>
               <p className="text-muted-foreground">
@@ -56,7 +64,7 @@ export default function ServicesPage() {
 
             <div className="bg-card p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-primary" />
+                <Users className="h-6 w-6 text-primary"/>
               </div>
               <h3 className="text-xl font-semibold mb-3">
                 Profile Recommendations
@@ -69,47 +77,54 @@ export default function ServicesPage() {
           </div>
 
           <div className="relative rounded-xl overflow-hidden shadow-xl">
-            <div className="aspect-video">
-              <video
-                src="/videov.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="object-cover w-full h-full"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Button size="lg" className="gap-2">
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm3.5 10.7l-5 3A1 1 0 0 1 7 13V7a1 1 0 0 1 1.5-.7l5 3a1 1 0 0 1 0 1.4z" />
-                  </svg>
-                  Watch Demo
-                </Button>
-              </div>
+            <div className="aspect-video ">
+              {playVideo ? (
+                  <video
+                      src="/videov.mp4"
+                      controls
+                      autoPlay
+                      className="object-cover w-full h-full"
+                  />
+              ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Button size="lg" className="gap-2" onClick={() => setPlayVideo(true)}>
+                      <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                      >
+                        <path
+                            d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm3.5 10.7l-5 3A1 1 0 0 1 7 13V7a1 1 0 0 1 1.5-.7l5 3a1 1 0 0 1 0 1.4z"/>
+                      </svg>
+                      Watch Demo
+                    </Button>
+                  </div>
+              )}
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Volunteer Expertise Areas */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">
-              Volunteer Expertise Areas
-            </h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              Our platform connects organizations with skilled volunteers across
-              a wide range of disciplines and specialties.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+
+
+</div>
+</section>
+
+  {/* Volunteer Expertise Areas */
+  }
+  <section className="py-16 bg-muted/30">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl font-bold mb-4">
+          Volunteer Expertise Areas
+        </h2>
+        <p className="text-muted-foreground max-w-3xl mx-auto">
+          Our platform connects organizations with skilled volunteers across
+          a wide range of disciplines and specialties.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <svg
                   className="h-6 w-6 text-primary"
