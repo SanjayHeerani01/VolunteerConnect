@@ -87,7 +87,7 @@ export default function Home() {
           <p className="text-xl text-white/90 max-w-2xl mb-8 animate-fade-in-delay">
             Bringing together volunteers and organizations to create meaningful change in communities around the world.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 animate-bounce-in" style={{ animationDelay: "0.6s" }}>
+          {/* <div className="flex flex-col sm:flex-row gap-4 animate-bounce-in" style={{ animationDelay: "0.6s" }}>
             <Button size="lg" className="group hover-lift">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -99,7 +99,7 @@ export default function Home() {
             >
               Learn More
             </Button>
-          </div>
+          </div> */}
 
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <ChevronDown className="h-8 w-8 text-white/70" />
@@ -181,7 +181,7 @@ export default function Home() {
                       Our AI-powered chatbot helps match the right volunteers with the right opportunities.
                     </p>
                     <Link
-                      href="/services"
+                      href="/chatbot"
                       className="text-primary font-medium inline-flex items-center hover:underline group"
                     >
                       Learn how it works

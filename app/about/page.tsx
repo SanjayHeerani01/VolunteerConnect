@@ -54,9 +54,15 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Our Story</h2>
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
+            <p>
+                At VolunteerConnect, our journey began with a simple belief
+                that everyone has something valuable to contribute. We recognized that many organizations struggle to find
+                the right volunteers with the right skills, while many talented individuals are eager to help but don't
+                know where to start.
+              </p>
               <p>
-                VolunteerConnect was founded in 2020 by a group of tech professionals who saw a disconnect between
-                organizations needing skilled help and volunteers wanting to make an impact.
+                Volunteer founders, a group of passionate individuals, came together to create a platform that would connect skilled
+                volunteers with organizations in need. We wanted to make volunteering more accessible, efficient, and
               </p>
               <p>
                 During the global pandemic, we witnessed how technology could bring people together despite physical
@@ -293,7 +299,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
-              <Image src="/v4.jpg?height=400&width=600" alt="Sector impact" fill className="object-cover" />
+              <Image src="/v11.jpg?height=400&width=600" alt="Sector impact" fill className="object-cover" />
             </div>
           </div>
         </div>

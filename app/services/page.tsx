@@ -304,12 +304,12 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button className="group">
               View All Expertise Areas
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -425,12 +425,12 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button variant="outline" className="group">
               View All Success Stories
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

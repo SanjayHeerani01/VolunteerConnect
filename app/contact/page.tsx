@@ -319,6 +319,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
+      <div id="faq-section" className="space-y-6 mt-12"></div>
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -370,14 +371,14 @@ export default function ContactPage() {
             </Card>
           </div>
 
-          <div className="text-center mt-8">
+          {/* <div className="text-center mt-8">
             <Link href="/faq">
               <Button variant="outline" className="group">
                 View All FAQs
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
